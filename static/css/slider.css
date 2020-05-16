@@ -1,0 +1,153 @@
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-container{
+  height: 600px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container{
+  height: 600px;
+  width: auto;
+  position: relative;
+  animation-name: slideranim;
+  animation-direction: normal;
+  animation-duration: 45s;
+}
+
+@keyframes slideranim {
+  0%
+  {
+    left: 0px;
+  }
+  11%
+  {
+    left: 0px;
+  }
+  15%
+  {
+    left: -800px;
+  }
+  22%
+  {
+    left: -800px;
+  }
+  25%
+  {
+    left: -1640px;
+  }
+  33%
+  {
+    left: -1640px;
+  }
+  35%
+  {
+    left: -2440px;
+  }
+  44%
+  {
+    left: -2440px;
+  }
+  50%
+  {
+    left: -3240px;
+  }
+  55%
+  {
+    left: -3240px;
+  }
+  60%
+  {
+    left: -4040px;
+  }
+  66%
+  {
+    left: -4040px;
+  }
+  70%
+  {
+    left: 4840px;
+  }
+  77%
+  {
+    left: -4840px;
+  }
+  82%
+  {
+    left: -5640px;
+  }
+  88%
+  {
+    left: -5640px;
+  }
+  94%
+  {
+    left: -6440px;
+  }
+  100%
+  {
+    left: -6440px;
+  }
+}
+
+.slider-image{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button-container{
+  top: -20px;
+  position: relative;
+}
+
+.slider-button{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#slider1:target ~ .image-container{
+  left: 0px;
+}
+
+#slider2:target ~ .image-container{
+  left: -800px;
+}
+
+#slider3:target ~ .image-container{
+  left: -1640px;
+}
+
+#slider4:target ~ .image-container{
+  left: -2440px;
+}
+
+#slider5:target ~ .image-container{
+  left: -3240px;
+}
+
+#slider6:target ~ .image-container{
+  left: -4040px;
+}
+
+#slider7:target ~ .image-container{
+  left: -4840px;
+}
+
+#slider8:target ~ .image-container{
+  left: -5640px;
+}
+
+#slider9:target ~ .image-container{
+  left: -6440px;
+}
