@@ -1,5 +1,6 @@
-#subhead{
+.subhead{
   color: crimson;
+  font-size: 30px;
   margin: 20px;
 }
 .disc{

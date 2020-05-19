@@ -1,18 +1,77 @@
 #slider{
   overflow: hidden;
-  height: 450px;
+  position: relative;
+  height: 500px;
+}
+#slidehead1{
+  position: absolute;
+  top:40%;
+  left: 50%;
+  text-align: center;
+  margin-right: -50%;
+  transform: translate(-50%,-50%);
+  color: none;
+  font-size: 90px;
+  font-family: Georgia;
+  font-weight: 600;
+  z-index: 9;
+  animation-name: slidehead;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+#slidehead2{
+  position: absolute;
+  top:60%;
+  left: 50%;
+  text-align: center;
+  margin-right: -50%;
+  transform: translate(-50%,-50%);
+  color: none;
+  font-size: 50px;
+  font-family: Palatino;
+  font-weight: 600;
+  z-index: 9;
+  animation-name: slidehead;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidehead {
+  0%{opacity: 0}
+  5%{opacity: 0}
+  10%{opacity: 1; color: darkblue}
+  15%{color: darkblue}
+  20%{color: maroon}
+  25%{color: maroon}
+  30%{color: white}
+  35%{color: white}
+  40%{color: blue}
+  45%{color: blue}
+  50%{color: purple}
+  55%{color: purple}
+  60%{color: darkorange}
+  65%{color: darkorange}
+  70%{color: white}
+  75%{color: white}
+  80%{color: yellow}
+  85%{color: yellow}
+  90%{color: blue}
+  95%{color: blue}
+  100%{color: darkblue}
+
 }
 
 #slider figure{
   position: relative;
   width: 1000%;
-  height: 400px;
+  height: 500px;
   margin: 0;
   left: 0;
   right: 0;
   animation-name: slider;
   animation-duration: 50s;
   animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 #slider figure img{
@@ -87,16 +146,6 @@
     left: -900%;
   }
   100%{
-    left: -1000%;
+    left: -900%;
   }
-}
-
-.button-container{
-  top: -20px;
-  position: relative;
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background-color: white;
 }

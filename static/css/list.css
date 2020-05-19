@@ -1,0 +1,16 @@
+.list-head{
+  color: green;
+  font-size: 30px;
+  margin: 15px;
+  margin-top: 20px;
+}
+ol{
+  color: red;
+  margin: 5px;
+}
+
+ul{
+  color: red;
+  margin-top: 10px;
+
+}
