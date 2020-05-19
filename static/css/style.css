@@ -33,3 +33,11 @@
   background-color: #4CAF50;
   color: white;
 }
+
+footer{
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: red;
+}
